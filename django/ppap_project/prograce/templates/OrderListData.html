@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+{% block title %}発注書一覧{% endblock %}
+{% block content %}
+<div>
+  <ul>
+    {% for obj in object_list %}
+    <li>{{ obj.PayTerms }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
